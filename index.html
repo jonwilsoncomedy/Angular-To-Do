@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='funTimeApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular To Do</title>
+    <script src="angular.min.js"></script>
+    <script src="client.js" type="text/javascript"></script>
+  </head>
+  <body ng-controller="MainController">
+    <h5>Add an Item To Do</h5>
+    <input type="text" ng-model="itemToDo" />
+    <button ng-click="handleClick()">CLICK!!!</button>
+    <ul>
+      <li ng-repeat="item in toDoList track by $index">
+          {{item}}
+      </li>
+    </ul>
+
+
+  </body>
+</html>
